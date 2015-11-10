@@ -1,5 +1,7 @@
 # Ember JsMock
 
+[![Build Status](https://travis-ci.org/j-fischer/ember-js-mock.svg?branch=master)](https://travis-ci.org/j-fischer/ember-js-mock)
+
 Ember addon to make [JsMock](http://jsmock.org/) available as an import in your tests. JsMock is a simple mocking test framework, which can be used with any test framework. It is inspired by [jMock](http://www.jmock.org/) and [Sinon.js](http://sinonjs.org/) with its interface being very similar to Sinon in order to make it easy to switch between those two frameworks.
 
 `ember-js-mock` was inspired by [ember-sinon](https://github.com/csantero/ember-sinon).
