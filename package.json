@@ -1,15 +1,13 @@
 {
   "name": "ember-js-mock",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Ember CLI addon for JsMock (http://jsmock.org)",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build",
-    "start": "ember server",
-    "test": "ember try:testall"
+    "postversion": "git push && git push --tags"
   },
   "repository": "",
   "engines": {
@@ -52,8 +50,5 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  },
-  "scripts": {
-    "postversion": "git push && git push --tags"
   }
 }
