@@ -54,18 +54,9 @@ BSD 3-clause, see [License.txt](https://github.com/j-fischer/ember-js-mock/blob/
 
 ## Changelog
 
-### 0.4.0
+Due to a number of NPM packaging issues (see https://github.com/npm/npm/issues/5082), the majority of the previous packages have had issues. 
+Consequently, I am considering version 0.6.1 to be the initial release.  
 
-- Tried to stabilize npm packaging issues
-
-### 0.3.0 (broken - index.js is missing)
-
-- Renamed blueprint folder to ensure that it is executed automatically
-
-### 0.2.0 
-
-- No change (fixing npm packaging issue)
-
-### 0.1.0 (broken - index.js is missing)
+### 0.6.1
 
 - Initial release
