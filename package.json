@@ -58,7 +58,7 @@
   "files": [
     "LICENSE.md",
     "README.md",
-    "blueprint",
+    "blueprints",
     "addon",
     "config",
     "index.js",
