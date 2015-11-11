@@ -54,6 +54,14 @@ BSD 3-clause, see [License.txt](https://github.com/j-fischer/ember-js-mock/blob/
 
 ## Changelog
 
+### 0.3.0
+
+- Renamed blueprint folder to ensure that it is executed automatically
+
+### 0.2.0
+
+- No change (fixing npm packaging issue)
+
 ### 0.1.0
 
 - Initial release
