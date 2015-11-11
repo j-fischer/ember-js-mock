@@ -54,5 +54,16 @@
   "ember-addon": {
     "configPath": "tests/dummy/config"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "files": [
+    "LICENSE.md",
+    "README.md",
+    "blueprint",
+    "addon",
+    "config",
+    "index.js",
+    "package.json",
+    ".jshintrc",
+    ".watchmanconfig"
+  ]
 }
