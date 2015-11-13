@@ -50,7 +50,7 @@ The full API documentation for JsMock can be found [here](http://www.jsmock.org/
 
 ## License
 
-BSD 3-clause, see [License.txt](https://github.com/j-fischer/ember-js-mock/blob/master/LICENSE.md)
+BSD 3-clause, see [License.md](https://github.com/j-fischer/ember-js-mock/blob/master/LICENSE.md)
 
 ## Changelog
 
