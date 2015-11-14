@@ -7,6 +7,7 @@
     "test": "tests"
   },
   "scripts": {
+    "test": "ember test",
     "postversion": "git push && git push --tags"
   },
   "repository": {
