@@ -12,6 +12,6 @@
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.2.1",
     "qunit": "~1.18.0",
-    "js-mock": "~0.5.0"
+    "js-mock": "~1.0.0"
   }
 }
