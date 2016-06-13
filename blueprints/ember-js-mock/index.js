@@ -8,6 +8,11 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addBowerPackageToProject('js-mock');
+    return this.addBowerPackageToProject('js-mock', '~1.0.0').then(function () {
+      return this.addAddonToProject({
+        name: 'ember-jshamcrest',
+        target: '~0.2.0'
+      });
+    });
   }
 };
