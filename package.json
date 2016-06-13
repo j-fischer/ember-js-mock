@@ -1,6 +1,6 @@
 {
   "name": "ember-js-mock",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Ember CLI addon for JsMock (http://jsmock.org)",
   "directories": {
     "doc": "doc",
