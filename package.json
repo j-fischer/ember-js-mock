@@ -50,7 +50,8 @@
     "testing"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.3"
+    "ember-cli-babel": "^5.1.3",
+    "ember-jshamcrest": "^0.1.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
