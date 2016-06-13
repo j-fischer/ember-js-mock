@@ -13,10 +13,10 @@ module('Acceptance | js mock', {
   }
 });
 
-test('verify js-mock is available', function(assert) {  
+test('verify js-mock is available', function(assert) {
   var testMock;
-  
-  JsMock.monitorMocks(function () {
+
+  JsMock.watch(function () {
     testMock = JsMock.mock("test");
   });
 
@@ -24,5 +24,5 @@ test('verify js-mock is available', function(assert) {
 
   testMock();
 
-  assert.ok(JsMock.assertIfSatisfied());
+  assert.ok(JsMock.assertWatched());
 });
