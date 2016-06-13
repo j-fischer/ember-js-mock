@@ -60,6 +60,13 @@ BSD 3-clause, see [License.md](https://github.com/j-fischer/ember-js-mock/blob/m
 Due to a number of NPM packaging issues (see https://github.com/npm/npm/issues/5082), the majority of the previous packages have had issues.
 Consequently, I am considering version 0.6.1 to be the initial release.
 
+Major release versions will be synchronized between `ember-js-mock` and `js-mock`.
+
+### 1.0.0
+
+- Upgraded js-mock to 1.0.0
+- Added ember-jshamcrest as a dependency as it is required by js-mock in v1
+
 ### 0.6.1
 
 - Initial release
