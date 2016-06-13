@@ -12,9 +12,11 @@ Install JsMock in your ember application using the latest Ember CLI:
 
     $ ember install ember-js-mock
 
+**Note: Installing `ember-js-mock` will also install `ember-jshamcrest` as the latest version of JsMock currently depends on it. This was not by design and may change again in a later major version.**
+
 ## Getting Started
 
-In order to use JsMock in your tests, simply import it in your test file.  
+In order to use JsMock in your tests, simply import it in your test file.
 
     import { module, test } from 'qunit';
     import JsMock from 'js-mock';
@@ -23,25 +25,26 @@ In order to use JsMock in your tests, simply import it in your test file.
     // his code into every test case.
     var testMock;
 
-    JsMock.monitorMocks(function () {
-      testMock = JsMock.mock("test");
-    });
-    
     module('Acceptance | js mock', {
+      beforeEach: function () {
+        JsMock.watch(function () {
+          testMock = JsMock.mock("test");
+        });
+      },
       afterEach: function() {
         // Ensure that all expectations are fulfilled after each test case.
-        JsMock.assertIfSatisfied();
+        JsMock.assertWatched();
       }
     });
 
-    test('verify js-mock is available', function(assert) {  
+    test('verify js-mock is available', function(assert) {
       testMock.once();
 
       testMock();
 
       // If there is no other assertion needed in the test method
       // then simply use `assertIfSatisfied()`.
-      assert.ok(JsMock.assertIfSatisfied());
+      assert.ok(JsMock.assertWatched());
     });
 
 ## API Docs
@@ -54,8 +57,8 @@ BSD 3-clause, see [License.md](https://github.com/j-fischer/ember-js-mock/blob/m
 
 ## Changelog
 
-Due to a number of NPM packaging issues (see https://github.com/npm/npm/issues/5082), the majority of the previous packages have had issues. 
-Consequently, I am considering version 0.6.1 to be the initial release.  
+Due to a number of NPM packaging issues (see https://github.com/npm/npm/issues/5082), the majority of the previous packages have had issues.
+Consequently, I am considering version 0.6.1 to be the initial release.
 
 ### 0.6.1
 
