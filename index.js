@@ -1,4 +1,4 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
 
   included: function (app) {
     if (app.tests) {
-      app.import('bower_components/js-mock/dist/js-mock.js', {
+      app.import(this.project.nodeModulesPath + '/js-mock/dist/js-mock.js', {
         type: 'test'
       });
     }
