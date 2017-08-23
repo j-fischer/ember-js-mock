@@ -1,5 +1,5 @@
 module.exports = {
-  description: 'Adds js-mock to bower dependencies.',
+  description: 'Adds js-mock and ember-jshamcrest to npm dependencies.',
 
   normalizeEntityName: function() {
     // this prevents an error when the entityName is
@@ -8,6 +8,8 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addBowerPackageToProject('js-mock', '~1.0.0');
+    return this.addAddonToProject({name:'ember-jshamcrest', target: '~0.3.0'}).then(() => {
+      return this.addPackageToProject('js-mock', '~1.0.0');
+    })
   }
 };

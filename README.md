@@ -12,7 +12,7 @@ Install JsMock in your ember application using the latest Ember CLI:
 
     $ ember install ember-js-mock
 
-**Note: `ember-js-mock` currently depends on `ember-js-hamcrest` to installed as well. This may change in the future, but for now, please run the following install command as well.**
+**Note: `ember-js-mock` currently depends on `ember-jshamcrest` to be installed as well. This is installed during a normal install.  To manually install run the command below.**
 
     $ ember install ember-jshamcrest
 
@@ -63,6 +63,9 @@ Due to a number of NPM packaging issues (see https://github.com/npm/npm/issues/5
 Consequently, I am considering version 0.6.1 to be the initial release.
 
 Major release versions will be synchronized between `ember-js-mock` and `js-mock`.
+
+### 1.2.0
+- Updated to ember-cli 2.14.1, migrated bower dependencies to npm
 
 ### 1.0.0
 
